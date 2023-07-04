@@ -1,0 +1,40 @@
+﻿input[type=text], input[type=password]
+        {
+            width: 195px;
+        }
+table
+        {
+            border: 1px solid violet;
+            border-collapse: collapse;
+        }
+        table th
+        {
+            background-color: blueviolet;
+            color: white;
+            font-weight: bold;
+        }
+        table th, table td
+        {
+            padding: 5px;
+            border: 1px solid mediumvioletred;
+        }
+.violet {
+
+            color: violet;
+}
+.personsearch {
+            margin-top: 100px;
+            text-align: center;
+
+}
+
+
+]
+
+
+
+
+
+
+}
+

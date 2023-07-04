@@ -1,0 +1,158 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="akshara.master.cs" Inherits="PGSO" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Misamis Oriental  | PGSO">
+    <meta name="author" content="aspxtemplates.com">
+    <!-- Bootstrap Core CSS -->
+    <title>PGSO Information System | MMV 2016 - 2017</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- SmartMenus jQuery Bootstrap Addon CSS -->
+    <link href="css/jquery.smartmenus.bootstrap.css" rel="stylesheet">
+    <link href="css/owl/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="css/owl/owl.theme.css" rel="stylesheet" type="textstyl/css" />
+    <link href="css/owl/owl.transitions.css" rel="stylesheet" type="text/css" />
+    <link href="css/login.css" rel="stylesheet" type="text/css" />
+    <link href="css/style2.css" rel="stylesheet" type="text/css" />
+    <!-- Custom CSS -->
+    <link href="css/1-col-portfolio.css" rel="stylesheet">
+   <!-- <link href='https://fonts.googleapis.com/css?family=Ubuntu:300,400,700' rel='stylesheet'
+        type='text/css'>
+    <!--<link href="http://fonts.googleapis.com/css?family=Open+Sans:300,400italic,700italic,400,700"
+        rel="stylesheet" type="text/css" /> -->
+    <!-- Required plugin - Animate.css -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link href="fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->  
+
+    <asp:ContentPlaceHolder ID="head" runat="server">   
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <!-- Header Navbar fixed top -->
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+        <div class="container">
+            <div class="navbar-header animated wow fadeInUp" data-wow-delay="1.2s">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="https://www.misamisoriental.gov.ph"><i class="fa fa-diamond"></i>Provincial General Services Office</a>
+            </div>
+            <div class="navbar-collapse collapse animated wow fadeInLeft" data-wow-delay="2.4s">
+                <!-- Left nav -->
+                <ul class="nav navbar-nav navbar-right">
+                    <li runat="server" id="home"><a href="PublicDefault.aspx" runat="server">Home</a></li>
+                    <li class="dropdown">
+                      <a href="Active.aspx" class="dropdown-toggle" data-toggle="dropdown">Properties <b class="caret"></b></a>
+                      <ul class="dropdown-menu">
+                        <li><a href="Active.aspx">Active</a></li>
+                        <li><a href="Transferred.aspx">Transferred</a></li>
+                        <li><a href="Cancelled.aspx">Cancelled</a></li>
+                        <li><a href="Notfound.aspx">Not Found</a></li>
+                        <li><a href="Vehicles.aspx">Light Vehicles</a></li>
+                        <li><a href="Multicabs.aspx">Multicabs</a></li>
+                        <li><a href="Heavyequipment.aspx">Heavy Equipments</a></li>
+                        <li><a href="Maintenance.aspx">Scanned Hard Copy</a></li>
+                        <li>
+                      </ul>
+                    </li>
+                    <li>
+                        <!-- add search form -->
+                     <!--   <div class="navbar-form" role="search">
+                            <div class="input-group">
+                                <asp:TextBox ID="personsearch" runat="server" placeholder="Search this site" class="form-control"></asp:TextBox>
+                                <span class="input-group-btn">
+                                    <asp:LinkButton runat="server" ID="Button1" ToolTip="Search" CssClass="btn btn-default"
+                                        Text='<i class="glyphicon glyphicon-search"></i>' />
+                                </span>
+                            </div> 
+                        </div> -->
+                    </li>
+                    <li runat="server" id="login">
+                        <asp:LoginStatus ID="LoginStatus1" runat="server" />
+                       
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <%--main Content--%>
+    <div class="container-fluid">
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+     <footer id="fh5co-footer" class="padding100">
+			
+			<div class="fh5co-footer-content">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-3 col-sm-4 col-md-push-3 animated wow fadeInLeft" data-wow-delay="0.2s">
+							<h3 class="fh5co-lead"></h3>
+                             Republic of the Philippines <br />
+                             Provincial Government of Misamis Oriental  <br />
+                             Capitol Compound, Cagayan de Oro City, Philippines, 9000 <br />
+							
+						</div>
+
+						<div class="col-md-3 col-sm-4 col-md-push-3 animated wow fadeInLeft" data-wow-delay="0.4s">
+							<h3 class="fh5co-lead">
+							</h3>
+                            Kung Taga Mis. Or. Ka, Secure ka!<br />
+                            Office of the PGSO Department Head<br />
+                            Old LTO Bldg. A. Luna-Velez St. Cagayan de Oro City <br />
+                            Tel. #: (08822)724375, <br /> Email Add: misor.pgso@gmail.com<br />
+
+                            
+
+
+						</div>
+						<div class="col-md-3 col-sm-4 col-md-push-3 animated wow fadeInLeft" data-wow-delay="0.6s">
+                            <h3 class="fh5co-lead"></h3>
+                            <div class="fh5co-footer-logo"><a href="http://www.misamisoriental.gov.ph" target="_blank">Property Management Information System</a></div>
+							<p class="fh5co-copyright"><a href="http://www.facebook.com/Lightceus" target="_blank"><small>&copy; PGSO 2016 - 2017. All Rights Reserved. <br/> </a></small></p>
+							<!--
+                            <p class="fh5co-social-icons">
+								<a href="#"><i class="fa fa-twitter"></i></a>
+								<a href="#"><i class="fa fa-facebook"></i></a>
+								<a href="#"><i class="fa fa-instagram"></i></a>
+								<a href="#"><i class="fa fa-dribbble"></i></a>
+								<a href="#"><i class="fa fa-youtube"></i></a>
+							</p>
+                            -->
+						</div>
+
+						<div class="col-md-3 col-sm-12 col-md-pull-9 animated wow fadeInLeft" data-wow-delay="0.8s"> <br />
+                            <img src="img/misorlogo.png" alt="logo"/>
+						</div>
+						
+					</div>
+				</div>
+			</div>
+		</footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/wow.min.js" type="text/javascript"></script>
+    <script src="js/tutorial.js"></script>
+    <script src="css/owl/owl.carousel.js" type="text/javascript"></script>
+    <!-- SmartMenus jQuery plugin -->
+    <script type="text/javascript" src="js/jquery.smartmenus.js"></script>
+    <!-- SmartMenus jQuery Bootstrap Addon -->
+    <script type="text/javascript" src="js/jquery.smartmenus.bootstrap.js"></script>
+    <script src="js/contact.js" type="text/javascript"></script>
+        
+    </form>
+</body>
+</html>

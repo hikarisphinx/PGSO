@@ -1,0 +1,285 @@
+﻿<%--
+Default skin template. The following skins are provided as examples only.
+
+1. Named control skin. The SkinId should be uniquely defined because
+   duplicate SkinId's per control type are not allowed in the same theme.
+
+<asp:GridView runat="server" SkinId="gridviewSkin" BackColor="White" >
+   <AlternatingRowStyle BackColor="Blue" />
+</asp:GridView>
+
+2. Default skin. The SkinId is not defined. Only one default 
+   control skin per control type is allowed in the same theme.
+
+<asp:Image runat="server" ImageUrl="~/images/image1.jpg" />
+
+--%>
+<asp:TableCell SkinId="celFormLabel_Back" runat="server" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" Font-Bold="true" VerticalAlign="Top" HorizontalAlign="Left" Width="30%"></asp:TableCell>
+
+
+<asp:Table SkinId="tblEntryMain" runat="server" CellPadding="2" CellSpacing="0" HorizontalAlign="Center" Width="823px"/>
+<asp:TextBox    runat="server" SkinId="txtLoginEntry" ForeColor="#000000" Font-Bold="true" Font-Italic="true" Font-Size="11px" runat="server" Width="130px"/>
+<asp:LinkButton runat="server" SkinId="lnkLogin" style="background-image:url(~/images/btnLogin.png); background-repeat:no-repeat;color:#f1f0f0; text-decoration: none;cursor: hand;padding-Top:5px;"  onmouseover="this.style.color='#c7ac43'" onmouseout="this.style.color='#f1f0f0'"/>
+
+<asp:TableCell runat="server" SkinId="celTitle" Font-Bold="true" style="font-family: arial;font-size: 11px; color: #000000; padding:2px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celTitle12B" Font-Bold="true" style="color:#000000; font-family: arial;font-size: 12px; padding:0px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celTitle14B" Font-Bold="true" style="color:#000000; font-family: arial;font-size: 14px; padding:0px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celTitle16B" Font-Bold="true" style="color:#000000; font-family: arial;font-size: 16px; padding:0px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="ce1Border" style="font-family: arial;font-size: 11px; padding:0; border-color: #4776A4; border-width:1px"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="ce11BWhite" Font-Bold="true" HorizontalAlign="Center" style="color:#FFFFFF; font-family: arial;font-size: 11px; padding:1px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="ce11Black" HorizontalAlign="Center" style="color:#000000;  background-color: #FFFFFF; font-family: arial;font-size: 11px; padding:1px;"></asp:TableCell>
+
+<asp:TableCell runat="server" SkinId="celHeight"  Height="10px"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celPaging"  style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" HorizontalAlign="Right"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celLineTop" style="color: #000000; padding:0px; border-top: solid #000000 1px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celLineBottom" style="color: #000000; padding:0px; border-bottom: solid #000000 1px;"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celLineDouble" Font-Bold="true" style="color: #000000; padding:0px; border-bottom: solid #000000 2px;"></asp:TableCell>
+
+<asp:Label runat="server" SkinId="lblTimer" Style="font-family: arial;font-size: 32px; color:#000000;font-weight:bold"/>
+<asp:Label runat="server" SkinId="lblPageTitle" Style="font-family: arial;font-size: 14px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lblPageGuide"  Style="font-family: arial;font-size: 11px;"/>
+<asp:Label runat="server" SkinId="lblReportTitle" Style="font-family: arial;font-size: 13px; ;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lblErrorMessage" Style="font-family: arial;font-size: 10px; color:#f90c11;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl10B" Style="font-family: arial;font-size: 10px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl11B" Style="font-family: arial;font-size: 11px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl12B" Style="font-family: arial;font-size: 12px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl14B" Style="font-family: arial;font-size: 14px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl15B" Style="font-family: arial;font-size: 15px; color:#0000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl16B" Style="font-family: arial;font-size: 15px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl18B" Style="font-family: arial;font-size: 18px; color:#000000;font-weight: bold"/>
+<asp:Label runat="server" SkinId="lbl14" Style="font-family: arial;font-size: 14px; color:#000000;"/>
+<asp:Label runat="server" SkinId="lbl11B2" Style="font-family: arial;font-size: 11px; color:#000000;font-weight: bold"/>
+<%-- Public --%>
+<asp:Table runat="server" SkinID="tblPublicMasterPage" Width="960px"/>
+
+<asp:Table runat="server" SkinID="tblBox" Width="98%" BorderWidth="1" BackColor="#006699" BorderColor="#006699" CellPadding="2" CellSpacing="0"/>
+<asp:Table runat="server" SkinID="tblLine" Width="100%" Height="5px" BorderWidth="0" CellPadding="2" CellSpacing="2"/>
+<asp:Table runat="server" SkinID="tblLine1" Width="100%" Height="5px" BorderWidth="0" CellPadding="5" CellSpacing="1" BackColor="#808080" BorderColor="#808080"/>
+<asp:Table runat="server" SkinID="tblFormAdd" Width="100%" BorderWidth="1" BackColor="#808080" BorderColor="#006699" CellPadding="2" CellSpacing="0"/>
+<asp:Table runat="server" SkinID="tblBorder1" Width="100%" BorderWidth="0" BackColor="#808080" BorderColor="#006699" CellPadding="2" CellSpacing="1"/>
+
+<asp:TextBox runat="server" SkinID="txtLogin1" Width="100px" Style="border: solid #000000 1px; padding:3px;" Font-Names="Arial" Font-Size="12px"/>
+<asp:TextBox runat="server" SkinID="txtLogin" Height="12px" Width="150px" Style="border: solid #000000 1px; padding:5px;" Font-Names="Arial" Font-Size="14px"/>
+
+<asp:Button runat="server" SkinId="btncontrol" Style="cursor:hand; border: solid #d1d1d1 1px; background-color: #3e7291; color: #f1f0f0; height:23px;width:80px; font-size: 11px; text-align:center;" Font-Bold="true"/>
+<asp:Button runat="server" SkinId="btnLogin01" Style="cursor:hand; border: solid #333333 1px; background-color: #999999; color: #FFFFFF; height:25px; font-size: 12px;font-weight: bold;"
+            onmouseout="this.style.color='#FFFFFF'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#333333'; this.style.textDecoration='none';"/>
+            
+<asp:Button runat="server" SkinId="btnLogin" Style="cursor:hand; border: solid #4776A4 1px; background-color: #8b0ef7; color: #FFFFFF; height:21px; font-size: 11px;"
+            onmouseout="this.style.color='#FFFFFF'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#FF6600'; this.style.textDecoration='none';"/>
+
+<asp:LinkButton runat="server"  SkinId="lnkButtonBold" Font-Underline="False" Style="cursor:hand;font-weight: bold; border: solid #CCCCCC 0px; padding: 0px; color: #006699; background-color: Transparent; height: 21px; font-size: 11px;"
+            onmouseout="this.style.color='#006699'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#FF6600'; this.style.textDecoration='none';"/>
+<asp:LinkButton runat="server"  SkinId="lnkButton" Font-Underline="False" Style="cursor:hand; border: solid #CCCCCC 0px; padding: 0px; color: #006699; background-color: Transparent; height: 21px; font-size: 11px;"
+            onmouseout="this.style.color='#006699'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#FF6600'; this.style.textDecoration='none';"/>
+<asp:LinkButton runat="server" SkinId="lnkLine" Font-Underline="False" Style="cursor:hand; font-family: arial; border-left: solid transparent 0px; padding: 0px; color: #8b0ef7; background-color: Transparent; font-size: 11px;"
+            onmouseout="this.style.color='#8b0ef7'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#FF6600'; this.style.textDecoration='none';"/>
+<%-- Secured --%>
+
+<asp:Menu runat="server" CssClass="IE8Fix" SkinId="sMenu" BorderStyle="None" BackColor="#8b0ef7" BorderWidth="0px" BorderColor="#8b0ef7" Orientation="Horizontal">
+    <StaticMenuItemStyle BorderWidth="0" CssClass="webMenuNavigation" ForeColor="#336699" Font-Names="Arial" HorizontalPadding="5px" VerticalPadding="5px" Font-Size="8px"/>
+    <StaticSelectedStyle BorderWidth="0" CssClass="webMenuNavigationS" BackColor="#8b0ef7" ForeColor="#FFFFFF"/>
+    <StaticHoverStyle BorderWidth="0" CssClass="webMenuNavigationH" BackColor="#B7C9CC" ForeColor="#006699"/>
+    <StaticMenuStyle BorderWidth="0" BackColor="#FFFFFF" ForeColor="#FFFFFF"/>
+    <DynamicMenuItemStyle  BorderWidth="1" CssClass="webMenuNavigationSub" ForeColor="#FFFFFF" Font-Names="Arial" BackColor="#8b0ef7" HorizontalPadding="10px" VerticalPadding="5px" Font-Size="8px"/>
+    <DynamicSelectedStyle BorderWidth="1" CssClass="webMenuNavigationSubS" BackColor="#B7C9CC" ForeColor="#FFFFFF"/>
+    <DynamicHoverStyle BorderWidth="1" CssClass="webMenuNavigationSubH" BackColor="#B7C9CC" ForeColor="#006699"/>
+    <DynamicMenuStyle BorderWidth="1" BorderColor="#006699"/>
+</asp:Menu>
+
+<asp:Table runat="server" SkinId="tblMenuContainer"     BorderWidth="5" CellPadding="2" CellSpacing="0" BorderColor="Transparent" />
+<asp:Table runat="server" SkinID="tblSecuredMasterPage" BorderWidth="0" CellPadding="0" CellSpacing="0" BackColor="#f5f5e1" Width="961px"/>
+<asp:Table runat="server" SkinId="tblForm"              BorderWidth="0" CellPadding="0" CellSpacing="0" Width="100%"/>
+<asp:Table runat="server" SkinId="tblFormContent"       BorderWidth="0" CellPadding="0" CellSpacing="5" Width="100%"/>
+<asp:Table runat="server" SkinId="tblReportContent"     BorderWidth="1" CellPadding="0" CellSpacing="5" Width="80%"/>
+<asp:Table runat="server" SkinId="tblNoBorder"          BorderWidth="0" CellPadding="0" CellSpacing="0" BorderColor="Transparent" Width="100%"/>
+<asp:Table runat="server" SkinId="tblAttachment"        BorderWidth="1" CellPadding="0" CellSpacing="2" BorderColor="#006699" Width="100%"/>
+
+<asp:LinkButton SkinID="Link" runat="server" CssClass="Link" ForeColor="#002f65" /> 
+
+<asp:TableCell runat="server" SkinId="celLabel"     style="font-family: arial;font-size: 11px; color: #000000; padding:0px;" VerticalAlign="Top"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel3" Width="25%" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;"  VerticalAlign="Top" HorizontalAlign="Right" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel3_2" Width="25%" style="font-family: arial;font-size: 11px; color: #8b0ef7; padding:5px;" VerticalAlign="Top" HorizontalAlign="Right" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel3_3" Width="100%" style="font-family: arial;font-size: 11px; color: #8b0ef7; padding:5px;" VerticalAlign="Top" HorizontalAlign="Left" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel" Width="20%" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" VerticalAlign="Middle" HorizontalAlign="Left" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel2"  Width="80%" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" VerticalAlign="Middle" HorizontalAlign="Left" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel_long" Width="25%" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" VerticalAlign="Middle" HorizontalAlign="Left" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel2_long" Width="75%" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" VerticalAlign="Middle" HorizontalAlign="Left" Font-Bold="true"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormText"  style="font-family: arial;font-size: 11px; color: #000000; padding:0px;" HorizontalAlign="Left"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celFormLabel18" Width="15%" style="font-family: arial;font-size: 16px; color: #000000; padding:5px;" VerticalAlign="Middle" Font-Bold="true"></asp:TableCell>
+
+<asp:TableCell runat="server" SkinId="celLabelPDSQ" width="60%" style="font-family: arial;font-size: 11px; color: #000000; padding:0px;" VerticalAlign="Top"></asp:TableCell>
+<asp:TableCell runat="server" SkinId="celLabelPDSQ2" width="40%" style="font-family: arial;font-size: 11px; color: #000000; padding:0px;" VerticalAlign="Top"></asp:TableCell>
+
+<asp:TableCell runat="server" SkinId="celFormLabel04" style="font-family: arial;font-size: 11px; color: #000000; padding:5px;" VerticalAlign="Top" HorizontalAlign="Right" Font-Bold="true" Width="25%"></asp:TableCell>
+
+
+<asp:TextBox runat="server" SkinId="txtInputForm" HorizontalAlign="Left" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="40%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputForm_long" HorizontalAlign="Left" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="60%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputForm_long2" HorizontalAlign="Left" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="85%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputForm_short" HorizontalAlign="Left" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="10%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputEmail"   BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="80%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputGrid"   BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:2px;" Font-Names="Arial" Font-Size="11px" Width="90%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputAmount" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="100px"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputBy"  BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="150px"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputDate" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="130px"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputYear" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="50px"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInput100" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="100px"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputDigit" BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="14px" Width="25px"></asp:TextBox>
+
+<asp:TextBox runat="server" SkinId="txtInputForm04"   BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="94%"></asp:TextBox>
+<asp:TextBox runat="server" SkinId="txtInputForm05"   BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="180"></asp:TextBox>
+<asp:TextBox SkinId="txtInputForm_longNew" runat="server"  BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="95%"></asp:TextBox>
+<asp:TextBox SkinId="txtInputForm_small" runat="server"  BackColor="#FFFFFF" Style="border: solid #000000 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" Width="200px"></asp:TextBox>
+<asp:TextBox SkinId="txtInputForm_Logtime" runat="server"  BackColor="#FFFFFF" Style="border: solid #000000 1px; padding:3px;" Font-Names="Arial" Font-Size="18px" Width="150px"></asp:TextBox>
+
+
+<asp:DropDownList runat="server" SkinId="ddlInputFormHrMin"  Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" font-Style="Bold" width="47px"></asp:DropDownList>
+<asp:DropDownList runat="server" SkinId="ddlInputForm"  Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" font-Style="Bold"></asp:DropDownList>
+<asp:DropDownList runat="server" SkinId="ddlInputForm_long"  Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="11px" width="25%"></asp:DropDownList>
+<asp:RadioButtonList runat="server" SkinId="rdoInputForm" CellPadding="0" CellSpacing="1" RepeatDirection="Horizontal" style="border: solid #8b0ef7 0px;font-family: arial;font-size: 11px; color: #000000;"></asp:RadioButtonList>
+<asp:CheckBoxList runat="server" SkinId="chkInputForm" BorderWidth="1" BorderColor="#8b0ef7"></asp:CheckBoxList>
+
+<asp:DropDownList runat="server" SkinId="editableDDL"  Style="border: solid #8b0ef7 1px; padding:3px;position: absolute; top: 0; left: 0; z-index: 999; padding: 0; margin: 0;" Font-Names="Arial" Font-Size="11px" font-Style="Bold" Width="95%"></asp:DropDownList>
+<asp:TextBox runat="server" SkinId="editableTXT"   BackColor="#F7F9F9" Style="border: solid #8b0ef7 1px; padding:3px;position: absolute;
+    top: 0; left: 0; padding: 0; margin: 0;" Font-Names="Arial" Font-Size="11px" Width="100%"></asp:TextBox>
+
+<%-- Form --%>
+<asp:FileUpload runat="server" SkinId="fileUpload" Style="border: solid #8b0ef7 1px; padding:3px;" Font-Names="Arial" Font-Size="12px" Width="80%"/>
+
+<asp:Button runat="server" SkinId="btnImageBG" Style="background-image:url(~/images/imgMenuBG.jpg); cursor:hand; border: solid #4776A4 0px; color: #FFFFFF; height:55px; width:184px; font-size: 20px; text-align:center; background-repeat:no-repeat;"/>
+
+
+<asp:Button runat="server" SkinId="btnSearch_" Style="cursor:hand; border: solid #000000 1px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+
+<asp:Button runat="server" SkinId="btnSearch_1"  Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:22px; font-size: 11px; text-align:left;"/>
+
+<asp:Button runat="server" SkinId="btnEnter"  Style="background-image:url(images/enter.jpg);  border: solid #000000 0px; cursor:hand; background-color: transparent; color: #FFFFFF; height:39px; width:111px; background-repeat:no-repeat;"/>
+<asp:Button runat="server" SkinId="btnSubmit_"  Style="background-image:url(images/submit.jpg);  border: solid #000000 0px; cursor:hand; background-color: transparent; color: #FFFFFF; height:39px; width:111px; background-repeat:no-repeat;"/>
+
+<asp:Button runat="server" SkinId="btnSearch"  Text="Search" Style="background-image:url(~/Images/btnSearch.png); cursor:hand; border: solid #4776A4 0px; background-color: transparent; padding-left: 20px; color: #FFFFFF; height:23px; font-size: 11px; text-align:left; background-repeat:no-repeat;"/>
+<asp:Button runat="server" SkinId="btnAdd_"    Text="Add" Style="background-image:url(~/images/btnadd.gif); cursor:hand; border: solid #000000 0px; padding-left:30px; padding-bottom:10px; background-color: #8b0ef7; color: #FFFFFF; height:28px; width:70px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnAdd"     Text="Add" Style="cursor:hand; border: solid #000000 1px; padding-left:10px; padding-bottom:0px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnDelete"  Text="Delete" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnSave"    Text="Save" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnEdit"    Text="Edit" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnCancel"  Text="Cancel" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px;  background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnPreview" Text="Preview" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnLookUp"  Text="Look-Up" Style="cursor:hand; border: solid #000000 1px; padding-left: 4px; background-color: #8b0ef7; color: #FFFFFF; height:20px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnSubmit"  Text="Submit" Style="cursor:hand; border: solid #000000 1px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px;"/>
+<asp:Button runat="server" SkinId="btnUpload"  Text="Upload" Style="cursor:hand; border: solid #000000 1px; background-color: #8b0ef7; color: #FFFFFF; height:19px; font-size: 11px;"/>
+<asp:Button runat="server" SkinId="btnDocUp"   Text="Upload" Style="cursor:hand; border: solid #000000 1px; background-color: #8b0ef7; color: #FFFFFF; height:19px; font-size: 11px;"/>
+<asp:Button runat="server" SkinId="btnDocDel"  Text="Delete" Style="cursor:hand; border: solid #000000 1px; background-color: #8b0ef7; color: #FFFFFF; height:19px; font-size: 11px;"/>
+<asp:Button runat="server" SkinId="btnSend"    Text="Send Invitation" Style="cursor:hand; border: solid #000000 1px; padding-left:10px; padding-bottom:0px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnPost"    Text="Post Comment" Style="cursor:hand; border: solid #000000 1px; padding-left:10px; padding-bottom:0px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnBack"    Text="Back" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnRetrieve" Text="Retrieve" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+<asp:Button runat="server" SkinId="btnResetPass"  Text="Reset Password" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px;  background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:middle;"/>
+<asp:Button runat="server" SkinId="btnReceive"    Text="Receive" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #8b0ef7; color: #FFFFFF; height:23px; font-size: 11px; text-align:left;"/>
+
+<asp:Button runat="server" SkinId="btnFinalize" Text=""  Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #FF0000; color: #FFFFFF; height:30px;font-weight:bold;font-size: 14px; text-align:center;"/>
+<asp:Button runat="server" SkinId="btnTimeIn"    Text="Time In" Style="cursor:hand; border: solid #000000 1px; padding-left: 10px; background-color: #FF0000; color: #FFFFFF; height:30px;font-weight:bold;font-size: 14px; text-align:center;"/>
+<asp:Button runat="server" SkinId="btnTimeInSubmit"  Text="Submit" Style="cursor:hand; border: solid #000000 1px; background-color: #FF0000; color: #FFFFFF; height:23px; font-size: 11px;"/>
+
+<asp:LinkButton runat="server"  SkinId="lnkMenu" Font-Underline="False" Style="cursor:hand; border: solid #CCCCCC 0px; padding: 0px; color: #000000; background-color: Transparent; height: 21px; font-size: 11px;"
+            onmouseout="this.style.color='#000000'; this.style.textDecoration='none';" 
+            onmouseover="this.style.color='#FF6600'; this.style.textDecoration='none';"/>
+
+<asp:LinkButton runat="server"  SkinId="lnkMenuSelected" Font-Underline="False" Style="cursor:hand; border: solid #CCCCCC 0px; padding: 0px; color: #FF6600; background-color: Transparent; height: 21px; font-size: 11px;"/>      
+            
+<asp:GridView runat="server" SkinId="gvDefault" Cellpadding="2" AllowPaging="True" AutoGenerateColumns="False" EmptyDataText="No Record..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#ffffff" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#0e1ecd" HeaderStyle-Height="21px">
+            <PagerSettings Mode="NumericFirstLast" FirstPageText="<" LastPageText=">" NextPageText="<" PreviousPageText=">" />            
+            <PagerStyle BackColor="#FFFFFF" Height="10px" Font-Bold="True" Font-Names="Arial" Font-Size="11px" Font-Underline="false" ForeColor="#006699" HorizontalAlign="Right" VerticalAlign="Middle"/>
+</asp:gridview> 
+
+<asp:GridView runat="server" SkinId="gvDefault15" Cellpadding="2" AllowPaging="True" AutoGenerateColumns="False" EmptyDataText="No Record..." PageSize="15" 
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#00000" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#c3bd15" HeaderStyle-Height="21px">
+            <PagerSettings Mode="NumericFirstLast" FirstPageText="<" LastPageText=">" NextPageText="<" PreviousPageText=">" />            
+            <PagerStyle BackColor="#FFFFFF" Height="10px" Font-Bold="True" Font-Names="Arial" Font-Size="11px" Font-Underline="false" ForeColor="#006699" HorizontalAlign="Right" VerticalAlign="Middle"/>
+</asp:gridview> 
+
+<asp:GridView runat="server" SkinId="gvNoPaging" AllowPaging="false" Cellpadding="2" AutoGenerateColumns="False" EmptyDataText="No Record..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#FFFFFF" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#0e1ecd" HeaderStyle-Height="21px">
+</asp:gridview>  
+
+<asp:GridView runat="server" SkinId="gvNoPagingHeaderAlter" ShowHeader="false"  AllowPaging="false" Cellpadding="2" AutoGenerateColumns="False" EmptyDataText="No Record..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#FFFFFF" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#8b0ef7" HeaderStyle-Height="21px">
+</asp:gridview> 
+
+<asp:GridView runat="server" SkinId="gvNoPagingHearder"  ShowHeader="false" AllowPaging="false" Cellpadding="5" AutoGenerateColumns="false" EmptyDataText="No Record/s..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px" BorderWidth="0px" BorderColor="#8b0ef7"
+            HeaderStyle-ForeColor="#FFFFFF" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true"
+            RowStyle-BorderColor="#8b0ef7" HeaderStyle-Height="21px">
+</asp:gridview>   
+
+<asp:GridView runat="server" SkinId="gvNo" ShowHeader="false"  AllowPaging="false" Cellpadding="2" AutoGenerateColumns="False" EmptyDataText="No Record..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#808080" BorderWidth="0px"
+            HeaderStyle-ForeColor="#FFFFFF" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            RowStyle-BorderColor="#FFFFFF" HeaderStyle-Height="21px">
+</asp:gridview> 
+<asp:GridView skinID="gvDefault2" runat="server" Font-Names="Arial" Font-Size="11px" BackColor="#556e8d" ForeColor="white" AutoGenerateColumns="false" CellPadding="3" GridLines="none" CellSpacing="1" width="100%" ShowHeader="true" ShowFooter="true" AllowPaging="true" EmptyDataText="There are no records available.">
+    <HeaderStyle BackColor="#330957" ForeColor="#FFFFFF" BorderColor="white" BorderWidth="1" Font-Bold="true" HorizontalAlign="left" /> 
+    <RowStyle BackColor="#FFFFFF" ForeColor="#000000" BorderColor="#5d9cfd" BorderWidth="1" HorizontalAlign="left" VerticalAlign="top" />
+    <AlternatingRowStyle ForeColor="#000000" BackColor="#d9e1f2" />
+    <PagerStyle BackColor="white" ForeColor="blue" HorizontalAlign="right" />
+    <PagerSettings Mode="NumericFirstLast" FirstPageText="<< First" LastPageText="Last >>" />
+    <EmptyDataRowStyle BackColor="white" ForeColor="black" />  
+</asp:GridView>
+
+
+<asp:GridView runat="server" SkinId="gvDB" Cellpadding="2" AllowPaging="True" AutoGenerateColumns="False" EmptyDataText="No Record..."  
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#00000" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#0e1ecd" HeaderStyle-Height="21px">
+            <PagerSettings Mode="NumericFirstLast" FirstPageText="<" LastPageText=">" NextPageText="<" PreviousPageText=">" />            
+            <PagerStyle BackColor="#FFFFFF" Height="10px" Font-Bold="True" Font-Names="Arial" Font-Size="11px" Font-Underline="false" ForeColor="#006699" HorizontalAlign="Right" VerticalAlign="Middle"/>
+</asp:gridview>  
+
+
+<asp:GridView runat="server" SkinId="gvSearch" Cellpadding="2" AllowPaging="True" AutoGenerateColumns="False" EmptyDataText="No Record..." PageSize="10" 
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#ffffff" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#0e1ecd" HeaderStyle-Height="21px">
+            <PagerSettings Mode="NumericFirstLast" FirstPageText="<" LastPageText=">" NextPageText="<" PreviousPageText=">" />            
+            <PagerStyle BackColor="#FFFFFF" Height="10px" Font-Bold="True" Font-Names="Arial" Font-Size="11px" Font-Underline="false" ForeColor="#006699" HorizontalAlign="Right" VerticalAlign="Middle"/>
+</asp:gridview>
+
+
+<asp:GridView runat="server" SkinId="gvPending" Cellpadding="2" AllowPaging="True" AutoGenerateColumns="False" EmptyDataText="" PageSize="3" 
+            Width="100%" Font-Names="Arial" Font-Size="11px"  BorderColor="#8b0ef7" BorderWidth="1px"
+            HeaderStyle-ForeColor="#ffffff" HeaderStyle-FontBold="False" HeaderStyle-Font-Size="11px" 
+            HeaderStyle-Font-Names="Arial" HeaderStyle-BackColor="#330957"
+            HeaderStyle-Wrap="true" AlternatingRowStyle-BackColor="#d7b4f5"
+            RowStyle-BorderColor="#0e1ecd" HeaderStyle-Height="21px">
+            <PagerSettings Mode="NumericFirstLast" FirstPageText="<" LastPageText=">" NextPageText="<" PreviousPageText=">" />            
+            <PagerStyle BackColor="#FFFFFF" Height="10px" Font-Bold="True" Font-Names="Arial" Font-Size="11px" Font-Underline="false" ForeColor="#006699" HorizontalAlign="Right" VerticalAlign="Middle"/>
+</asp:gridview>    
